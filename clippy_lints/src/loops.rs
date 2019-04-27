@@ -670,6 +670,7 @@ fn stmt_to_expr(stmt: &Stmt) -> Option<&Expr> {
 fn never_loop_expr(expr: &Expr, main_loop_id: HirId) -> NeverLoopResult {
     match expr.node {
         ExprKind::Box(ref e)
+        | ExprKind::Use(ref e)
         | ExprKind::Unary(_, ref e)
         | ExprKind::Cast(ref e, _)
         | ExprKind::Type(ref e, _)

@@ -396,6 +396,7 @@ impl<'a, 'tcx: 'a> SpanlessHash<'a, 'tcx> {
         }
 
         match e.node {
+            ExprKind::Use(_) => (),
             ExprKind::AddrOf(m, ref e) => {
                 let c: fn(_, _) -> _ = ExprKind::AddrOf;
                 c.hash(&mut self.s);
