@@ -21,6 +21,7 @@ pub const CSTRING_NEW: [&str; 5] = ["std", "ffi", "c_str", "CString", "new"];
 pub const DEFAULT_TRAIT: [&str; 3] = ["core", "default", "Default"];
 pub const DEFAULT_TRAIT_METHOD: [&str; 4] = ["core", "default", "Default", "default"];
 pub const DEREF_TRAIT_METHOD: [&str; 5] = ["core", "ops", "deref", "Deref", "deref"];
+pub const DISPLAY_TRAIT: [&str; 3] = ["core", "fmt", "Display"];
 pub const DISPLAY_FMT_METHOD: [&str; 4] = ["core", "fmt", "Display", "fmt"];
 pub const DOUBLE_ENDED_ITERATOR: [&str; 4] = ["core", "iter", "traits", "DoubleEndedIterator"];
 pub const DROP: [&str; 3] = ["core", "mem", "drop"];
